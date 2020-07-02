@@ -53,6 +53,47 @@ function detailGoods() {
     $('.base-left .lis .big-img').eq(index).siblings().css('opacity', 0);
     $('.base-left .lis .big-img').eq(index).css('opacity', 1);
   });
+  /* 加减 */
+
+  $(".add").click(function () {
+    var n = $(this).prev().html();
+
+    if (n >= 5) {
+      $(".add").css('cursor', 'not-allowed');
+      $(".add").css('color', '#ddd');
+      $(".reduce").css('cursor', 'pointer');
+      $(".reduce").css('color', '#777');
+      return;
+    }
+
+    var num = parseInt(n) + 1;
+
+    if (num == 0) {
+      return;
+    }
+
+    $(this).prev().html(num);
+  }); //减的效果
+
+  $(".reduce").click(function () {
+    var n = $(this).next().html();
+
+    if (n <= 1) {
+      $(".reduce").css('cursor', 'not-allowed');
+      $(".reduce").css('color', '#ddd');
+      $(".add").css('cursor', 'pointer');
+      $(".add").css('color', '#777');
+      return;
+    }
+
+    var num = parseInt(n) - 1;
+
+    if (num == 0) {
+      return;
+    }
+
+    $(this).next().html(num);
+  });
 }
 
 detailGoods();

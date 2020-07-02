@@ -202,6 +202,8 @@ body {
               width: 62px;
               height: 57px;
               text-align: center; }
+            .content section .base-right .number dd .num-item .add {
+              cursor: pointer; }
             .content section .base-right .number dd .num-item > div {
               display: inline-block;
               height: 55px;
