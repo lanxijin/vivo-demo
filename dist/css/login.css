@@ -1,0 +1,187 @@
+body {
+  background: #f7f7f7;
+  width: 100%;
+  height: 100%; }
+
+.login {
+  width: 100%;
+  background-color: #b9d3f8; }
+  .login .login-con {
+    height: 780px;
+    width: 1200px;
+    position: relative;
+    margin: 0 auto; }
+    .login .login-con .logo {
+      position: absolute;
+      top: 0;
+      left: 243px; }
+      .login .login-con .logo > a {
+        display: block;
+        height: 52px;
+        width: 145px;
+        background-image: url(https://accountstatic.vivo.com.cn/accountstatic.vivo.com.cn/static/img/logo-1.e4aed09.png);
+        background-size: 100% 100%; }
+    .login .login-con .login-box {
+      position: absolute;
+      top: 74px;
+      right: 0;
+      width: 420px;
+      background-color: #fff; }
+      .login .login-con .login-box .inner-box {
+        padding: 30px 30px 20px;
+        min-height: 513px; }
+        .login .login-con .login-box .inner-box .logo-area {
+          width: 160px;
+          height: 42px;
+          margin: auto;
+          cursor: pointer; }
+          .login .login-con .login-box .inner-box .logo-area a {
+            display: inline-block;
+            width: 100%;
+            height: 100%; }
+            .login .login-con .login-box .inner-box .logo-area a img {
+              width: 100%;
+              height: 100%; }
+        .login .login-con .login-box .inner-box .title {
+          margin-top: 15px;
+          font-size: 19px;
+          font-weight: 400;
+          color: #000;
+          text-align: center; }
+        .login .login-con .login-box .inner-box .toggle {
+          text-align: right;
+          font-size: 14px;
+          color: #456fff;
+          margin-top: 20px; }
+        .login .login-con .login-box .inner-box .ipt {
+          margin-top: 15px;
+          width: 360px;
+          height: 48px;
+          border: 1px solid #dedfe0;
+          position: relative; }
+          .login .login-con .login-box .inner-box .ipt input {
+            padding: 0 48px 0 12px;
+            box-sizing: border-box;
+            width: 100%;
+            height: 48px;
+            font-size: 16px;
+            color: #000;
+            border: 0; }
+          .login .login-con .login-box .inner-box .ipt .eye {
+            position: absolute;
+            right: 15px;
+            top: 15px;
+            width: 21px;
+            height: 18px;
+            cursor: pointer; }
+            .login .login-con .login-box .inner-box .ipt .eye img {
+              width: 100%;
+              height: 100%;
+              display: block; }
+              .login .login-con .login-box .inner-box .ipt .eye img:nth-child(2) {
+                display: none; }
+        .login .login-con .login-box .inner-box .check-box {
+          margin-top: 19px;
+          font-size: 14px; }
+          .login .login-con .login-box .inner-box .check-box .auto-login {
+            color: #666;
+            float: right;
+            user-select: none; }
+            .login .login-con .login-box .inner-box .check-box .auto-login .check {
+              width: 16px;
+              height: 16px;
+              background-color: #fff;
+              border: 1px solid #dedfe0;
+              float: left;
+              margin-right: 5px;
+              cursor: pointer; }
+              .login .login-con .login-box .inner-box .check-box .auto-login .check img {
+                vertical-align: baseline;
+                width: 80%;
+                height: 80%;
+                padding: 2px; }
+        .login .login-con .login-box .inner-box .login-btn {
+          display: block;
+          width: 360px;
+          height: 48px;
+          line-height: 48px;
+          font-size: 17px;
+          color: #fff;
+          text-align: center;
+          margin: 0 auto;
+          margin-top: 20px;
+          cursor: pointer;
+          background-color: #456fff;
+          background-image: linear-gradient(90deg, #418eff, #4566ff); }
+          .login .login-con .login-box .inner-box .login-btn:hover {
+            background-image: none !important;
+            background-color: #4566ff !important;
+            filter: none; }
+        .login .login-con .login-box .inner-box .register-btn {
+          width: 360px;
+          height: 48px;
+          line-height: 48px;
+          border: 1px solid #456fff;
+          color: #456fff;
+          font-size: 17px;
+          text-align: center;
+          margin-top: 15px;
+          cursor: pointer; }
+          .login .login-con .login-box .inner-box .register-btn:hover {
+            background-color: #d4dffa; }
+          .login .login-con .login-box .inner-box .register-btn a {
+            display: inline-block;
+            width: 100%;
+            height: 100%;
+            color: #456fff; }
+        .login .login-con .login-box .inner-box .hint3 {
+          margin-top: 15px;
+          font-size: 13px;
+          color: #999; }
+        .login .login-con .login-box .inner-box .forget-pwd {
+          font-size: 14px;
+          color: #666;
+          text-align: center;
+          margin-top: 20px;
+          cursor: pointer; }
+        .login .login-con .login-box .inner-box .other-way-login {
+          margin-top: 30px;
+          color: #999;
+          font-size: 13px;
+          text-align: center; }
+          .login .login-con .login-box .inner-box .other-way-login .fie {
+            border-width: 1px 0 0;
+            border-color: #f5f5ff; }
+            .login .login-con .login-box .inner-box .other-way-login .fie legend {
+              padding: 0 10px; }
+          .login .login-con .login-box .inner-box .other-way-login .icon-box {
+            text-align: center;
+            margin-top: 15px; }
+            .login .login-con .login-box .inner-box .other-way-login .icon-box .item {
+              width: 26px;
+              height: 26px;
+              display: inline-block;
+              margin: 0 8px; }
+              .login .login-con .login-box .inner-box .other-way-login .icon-box .item div {
+                width: 26px;
+                height: 26px;
+                background-size: 100% 100%;
+                background-repeat: no-repeat;
+                display: block;
+                cursor: pointer; }
+              .login .login-con .login-box .inner-box .other-way-login .icon-box .item .img-weixin {
+                background-image: url(https://accountstatic.vivo.com.cn/accountstatic.vivo.com.cn/static/img/weixin.d36a295.png); }
+                .login .login-con .login-box .inner-box .other-way-login .icon-box .item .img-weixin:hover {
+                  background-image: url(https://accountstatic.vivo.com.cn/accountstatic.vivo.com.cn/static/img/weixin-hover.460b022.png); }
+              .login .login-con .login-box .inner-box .other-way-login .icon-box .item .img-zhifubao {
+                background-image: url(https://accountstatic.vivo.com.cn/accountstatic.vivo.com.cn/static/img/zhifubao.a7cbcd5.png); }
+                .login .login-con .login-box .inner-box .other-way-login .icon-box .item .img-zhifubao:hover {
+                  background-image: url(https://accountstatic.vivo.com.cn/accountstatic.vivo.com.cn/static/img/zhifubao-hover.fac7ca7.png); }
+              .login .login-con .login-box .inner-box .other-way-login .icon-box .item .img-weibo {
+                background-image: url(https://accountstatic.vivo.com.cn/accountstatic.vivo.com.cn/static/img/weibo.06d9e46.png); }
+                .login .login-con .login-box .inner-box .other-way-login .icon-box .item .img-weibo:hover {
+                  background-image: url(https://accountstatic.vivo.com.cn/accountstatic.vivo.com.cn/static/img/weibo-hover.a34ab71.png); }
+              .login .login-con .login-box .inner-box .other-way-login .icon-box .item .img-renren {
+                background-image: url(https://accountstatic.vivo.com.cn/accountstatic.vivo.com.cn/static/img/renren.e758970.png); }
+                .login .login-con .login-box .inner-box .other-way-login .icon-box .item .img-renren:hover {
+                  background-image: url(https://accountstatic.vivo.com.cn/accountstatic.vivo.com.cn/static/img/renren-hover.6f89e8b.png); }

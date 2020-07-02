@@ -1,0 +1,328 @@
+body {
+  background: #f7f7f5; }
+
+.content {
+  width: 100%;
+  overflow: hidden; }
+  .content .banner {
+    width: 100%;
+    height: 523px;
+    margin-bottom: 10px;
+    position: relative;
+    overflow: hidden; }
+    .content .banner .banner-box {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      overflow: hidden;
+      z-index: 2; }
+      .content .banner .banner-box > a {
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+        display: none; }
+        .content .banner .banner-box > a:nth-child(1) {
+          display: block; }
+        .content .banner .banner-box > a img {
+          position: absolute;
+          top: 0;
+          left: 50%;
+          width: 2560px;
+          height: 523px;
+          margin-left: -1280px; }
+      .content .banner .banner-box > ul {
+        height: 5px;
+        position: absolute;
+        bottom: 15px;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        align-items: flex-end; }
+        .content .banner .banner-box > ul li {
+          width: 42px;
+          height: 2px;
+          background: #f7f7f7;
+          float: left;
+          margin: 0 5px;
+          cursor: pointer;
+          transition: height .4s; }
+          .content .banner .banner-box > ul li.first {
+            background: #fff;
+            height: 5px; }
+          .content .banner .banner-box > ul li:hover {
+            height: 5px; }
+    .content .banner .container {
+      position: relative;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 1200px;
+      height: 0;
+      z-index: 5; }
+      .content .banner .container .banner-nav {
+        width: 200px;
+        height: 523px;
+        position: relative;
+        top: 0;
+        left: 0;
+        z-index: 5; }
+        .content .banner .container .banner-nav > ul {
+          height: 482px;
+          background: rgba(255, 255, 255, 0.65);
+          text-align: center;
+          margin-top: 20px;
+          padding-top: 25px;
+          box-sizing: border-box;
+          position: relative; }
+          .content .banner .container .banner-nav > ul > li {
+            width: 100%; }
+            .content .banner .container .banner-nav > ul > li:hover .category-box {
+              display: block; }
+            .content .banner .container .banner-nav > ul > li > a {
+              position: relative;
+              display: block;
+              padding: 0 48px 0 42px;
+              box-sizing: border-box;
+              color: #333;
+              font-size: 14px;
+              line-height: 60px;
+              text-align: left;
+              white-space: nowrap;
+              overflow: hidden; }
+              .content .banner .container .banner-nav > ul > li > a:hover {
+                background: #fff; }
+              .content .banner .container .banner-nav > ul > li > a span {
+                font-size: 14px;
+                position: absolute;
+                right: 30px;
+                vertical-align: text-bottom;
+                color: #444; }
+            .content .banner .container .banner-nav > ul > li .category-box {
+              position: absolute;
+              top: 0;
+              bottom: 0;
+              left: 100%;
+              text-align: left;
+              white-space: nowrap;
+              background: #fff;
+              background-clip: padding-box;
+              border-left: 14px solid transparent;
+              overflow-y: auto;
+              display: none; }
+              .content .banner .container .banner-nav > ul > li .category-box .category-detail {
+                display: inline-block;
+                vertical-align: top;
+                padding: 8px 50px 0 44px;
+                width: 656px;
+                white-space: normal; }
+                .content .banner .container .banner-nav > ul > li .category-box .category-detail > a {
+                  float: right;
+                  color: #999;
+                  font-size: 12px;
+                  line-height: 58px; }
+                  .content .banner .container .banner-nav > ul > li .category-box .category-detail > a:hover {
+                    color: #f51919; }
+                    .content .banner .container .banner-nav > ul > li .category-box .category-detail > a:hover span {
+                      color: #f51919; }
+                  .content .banner .container .banner-nav > ul > li .category-box .category-detail > a span {
+                    font-size: 12px;
+                    position: absolute;
+                    right: 36px;
+                    vertical-align: text-bottom;
+                    color: #999; }
+                .content .banner .container .banner-nav > ul > li .category-box .category-detail > p {
+                  color: #252525;
+                  font-size: 16px;
+                  line-height: 58px; }
+                .content .banner .container .banner-nav > ul > li .category-box .category-detail .category-hd {
+                  margin-bottom: 9px;
+                  padding-bottom: 6px;
+                  font-size: 1px;
+                  border-bottom: 1px solid #e5e5e5; }
+                  .content .banner .container .banner-nav > ul > li .category-box .category-detail .category-hd li {
+                    display: inline-block;
+                    vertical-align: top;
+                    margin-bottom: 12px;
+                    width: 156px; }
+                    .content .banner .container .banner-nav > ul > li .category-box .category-detail .category-hd li a {
+                      margin-right: 8px;
+                      position: relative;
+                      z-index: 0;
+                      display: block;
+                      padding: 0 8px;
+                      color: #555;
+                      font-size: 14px;
+                      line-height: 50px;
+                      text-align: center;
+                      white-space: nowrap;
+                      text-overflow: ellipsis;
+                      border-radius: 6px;
+                      background: #eef3f7;
+                      background-size: cover;
+                      overflow: hidden; }
+                      .content .banner .container .banner-nav > ul > li .category-box .category-detail .category-hd li a:hover {
+                        background: #e0e5e8; }
+                .content .banner .container .banner-nav > ul > li .category-box .category-detail .category-bd {
+                  margin-bottom: -40px;
+                  padding-top: 39px;
+                  width: 690px;
+                  font-size: 1px;
+                  margin-right: 8px; }
+                  .content .banner .container .banner-nav > ul > li .category-box .category-detail .category-bd li {
+                    position: relative;
+                    display: inline-block;
+                    vertical-align: top;
+                    margin-bottom: 20px;
+                    width: 222px;
+                    font-size: 0; }
+                    .content .banner .container .banner-nav > ul > li .category-box .category-detail .category-bd li .iconHot {
+                      position: absolute;
+                      margin: -17px 0 0 36px;
+                      width: 26px;
+                      height: 26px;
+                      border-radius: 50%;
+                      background: #FC4F66 center/18px no-repeat url(https://shopstatic.vivo.com.cn/vivoshop/web/dist/img/home/hot_c29ecc5.png);
+                      overflow: hidden; }
+                    .content .banner .container .banner-nav > ul > li .category-box .category-detail .category-bd li a img {
+                      vertical-align: middle;
+                      width: 46px;
+                      height: 46px; }
+                    .content .banner .container .banner-nav > ul > li .category-box .category-detail .category-bd li a span {
+                      display: inline-block;
+                      vertical-align: middle;
+                      margin-left: 8px;
+                      max-width: 168px;
+                      color: #252525;
+                      font-size: 14px;
+                      white-space: nowrap;
+                      overflow: hidden;
+                      text-overflow: ellipsis; }
+  .content .wrapper {
+    width: 1200px;
+    margin: 0 auto;
+    overflow: hidden; }
+    .content .wrapper .floor-list {
+      width: 1300px;
+      margin-bottom: 40px; }
+      .content .wrapper .floor-list .box-list {
+        width: 100%; }
+        .content .wrapper .floor-list .box-list li {
+          width: 293px;
+          height: 140px;
+          position: relative;
+          display: inline-block;
+          vertical-align: top;
+          margin-bottom: 10px;
+          font-size: 0;
+          text-align: center;
+          background-color: #fff;
+          transition: all .4s linear;
+          margin-right: 6px; }
+          .content .wrapper .floor-list .box-list li:hover {
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1); }
+          .content .wrapper .floor-list .box-list li a {
+            display: inline-block;
+            width: 100%;
+            height: 100%; }
+            .content .wrapper .floor-list .box-list li a img {
+              height: 100%; }
+    .content .wrapper .v-list {
+      width: 100%;
+      overflow: hidden;
+      margin-bottom: 80px; }
+      .content .wrapper .v-list .v-listHd {
+        display: flex;
+        align-items: center;
+        padding-bottom: 25px; }
+        .content .wrapper .v-list .v-listHd img {
+          width: 82px;
+          height: 26px; }
+        .content .wrapper .v-list .v-listHd p {
+          margin-left: 10px;
+          font-size: 16px;
+          color: #999; }
+          .content .wrapper .v-list .v-listHd p .time {
+            display: inline-block;
+            border-radius: 3px;
+            width: 38px;
+            height: 32px;
+            line-height: 32px;
+            text-align: center;
+            background-color: #EC0404;
+            font-size: 18px;
+            color: #fff;
+            margin: 0 6px; }
+      .content .wrapper .v-list .v-listBody {
+        display: inline-block;
+        width: 100%;
+        position: relative; }
+        .content .wrapper .v-list .v-listBody .bd-list {
+          margin-left: auto;
+          margin-right: auto;
+          position: relative;
+          overflow: hidden;
+          z-index: 1; }
+          .content .wrapper .v-list .v-listBody .bd-list .swiper-wrapper {
+            position: relative;
+            width: 1250px;
+            height: 100%;
+            overflow: hidden;
+            z-index: 1; }
+            .content .wrapper .v-list .v-listBody .bd-list .swiper-wrapper li {
+              width: 293px;
+              height: 380px;
+              margin-right: 6px;
+              position: relative;
+              display: inline-block;
+              vertical-align: top;
+              margin-bottom: 10px;
+              text-align: center;
+              background-color: #fff;
+              transition: all .2s linear; }
+              .content .wrapper .v-list .v-listBody .bd-list .swiper-wrapper li:hover {
+                box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1); }
+              .content .wrapper .v-list .v-listBody .bd-list .swiper-wrapper li > img {
+                position: absolute;
+                right: 50px;
+                top: 28px;
+                z-index: 1;
+                width: 60px;
+                height: 60px; }
+              .content .wrapper .v-list .v-listBody .bd-list .swiper-wrapper li a {
+                display: block; }
+                .content .wrapper .v-list .v-listBody .bd-list .swiper-wrapper li a img {
+                  width: 172px;
+                  height: 172px;
+                  margin-top: 41px; }
+              .content .wrapper .v-list .v-listBody .bd-list .swiper-wrapper li .prod {
+                margin-top: 10px;
+                padding: 0 20px; }
+                .content .wrapper .v-list .v-listBody .bd-list .swiper-wrapper li .prod .name {
+                  font-size: 16px;
+                  white-space: nowrap;
+                  overflow: hidden;
+                  text-overflow: ellipsis;
+                  padding-top: 16px;
+                  color: #333;
+                  line-height: 30px; }
+                .content .wrapper .v-list .v-listBody .bd-list .swiper-wrapper li .prod .desc {
+                  line-height: 17px;
+                  height: 17px;
+                  margin-top: 10px;
+                  font-size: 12px;
+                  color: #333;
+                  white-space: nowrap;
+                  overflow: hidden;
+                  text-overflow: ellipsis; }
+                .content .wrapper .v-list .v-listBody .bd-list .swiper-wrapper li .prod .price {
+                  margin-top: 20px;
+                  font-size: 22px;
+                  line-height: 1;
+                  color: #f51919; }
+                  .content .wrapper .v-list .v-listBody .bd-list .swiper-wrapper li .prod .price span:nth-child(1) {
+                    font-size: 22px; }
+                  .content .wrapper .v-list .v-listBody .bd-list .swiper-wrapper li .prod .price span:nth-child(2) {
+                    margin-left: 6px;
+                    text-decoration: line-through;
+                    color: #aaa;
+                    font-size: 14px; }

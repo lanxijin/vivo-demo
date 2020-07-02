@@ -1,0 +1,230 @@
+body{
+    background: rgb(247,247,247);
+    width: 100%;
+    height: 100%;
+}
+$color:'#456fff';
+
+.login{
+    width: 100%;
+    background-color: rgb(185, 211, 248);
+    .login-con{
+        height: 780px;
+        width: 1200px;
+        position: relative;
+        margin: 0 auto;
+        .logo{
+            position: absolute;
+            top: 0;
+            left: 243px;
+            &>a{
+                display: block;
+                height: 52px;
+                width: 145px;
+                background-image: url(https://accountstatic.vivo.com.cn/accountstatic.vivo.com.cn/static/img/logo-1.e4aed09.png);
+                background-size: 100% 100%;
+            }
+        }
+        .login-box{
+            position: absolute;
+            top: 74px;
+            right: 0;
+            width: 420px;
+            background-color: #fff;
+            .inner-box{
+                padding: 30px 30px 20px;
+                min-height: 513px;
+                .logo-area{
+                    width: 160px;
+                    height: 42px;
+                    margin: auto;
+                    cursor: pointer;
+                    a{
+                        display: inline-block;
+                        width: 100%;
+                        height: 100%;
+                        img{
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+                }
+                .title{
+                    margin-top: 15px;
+                    font-size: 19px;
+                    font-weight: 400;
+                    color: #000;
+                    text-align: center;
+                }
+                .toggle{
+                    text-align: right;
+                    font-size: 14px;
+                    color: #456fff;
+                    margin-top: 20px;
+                }
+                .ipt{
+                    margin-top: 15px;
+                    width: 360px;
+                    height: 48px;
+                    border: 1px solid #dedfe0;
+                    position: relative;
+                    input{
+                        padding: 0 48px 0 12px;
+                        box-sizing: border-box;
+                        width: 100%;
+                        height: 48px;
+                        font-size: 16px;
+                        color: #000;
+                        border: 0;
+                    }
+                    .eye{
+                        position: absolute;
+                        right: 15px;
+                        top: 15px;
+                        width: 21px;
+                        height: 18px;
+                        cursor: pointer;
+                        img{
+                            width: 100%;
+                            height: 100%;
+                            display: block;
+                            &:nth-child(2){
+                                display: none;
+                            }
+                        }
+                    }
+                }
+                .check-box{
+                    margin-top: 19px;
+                    font-size: 14px;
+                    .auto-login{
+                        color: #666;
+                        float: right;
+                        user-select: none;
+                        .check{
+                            width: 16px;
+                            height: 16px;
+                            background-color: #fff;
+                            border: 1px solid #dedfe0;
+                            float: left;
+                            margin-right: 5px;
+                            cursor: pointer;
+                            img{
+                                vertical-align: baseline;
+                                width: 80%;
+                                height: 80%;
+                                padding: 2px;
+                            }
+                        }
+                    }
+                }
+                .login-btn{
+                    display: block;
+                    width: 360px;
+                    height: 48px;
+                    line-height: 48px;
+                    font-size: 17px;
+                    color: #fff;
+                    text-align: center;
+                    margin: 0 auto;
+                    margin-top: 20px;
+                    cursor: pointer;
+                    background-color: #456fff;
+                    background-image: linear-gradient(90deg,#418eff,#4566ff);
+                    &:hover{
+                        background-image: none!important;
+                        background-color: #4566ff!important;
+                        filter: none;
+                    }
+                }
+                .register-btn{
+                    width: 360px;
+                    height: 48px;
+                    line-height: 48px;
+                    border: 1px solid #456fff;
+                    color: #456fff;
+                    font-size: 17px;
+                    text-align: center;
+                    margin-top: 15px;
+                    cursor: pointer;
+                    &:hover{
+                        background-color: #d4dffa;
+                    }
+                    a{
+                        display: inline-block;
+                        width: 100%;
+                        height: 100%;
+                        color: #456fff;
+                    }
+                }
+                .hint3{
+                    margin-top: 15px;
+                    font-size: 13px;
+                    color: #999;
+                }
+                .forget-pwd{
+                    font-size: 14px;
+                    color: #666;
+                    text-align: center;
+                    margin-top: 20px;
+                    cursor: pointer;
+                }
+                .other-way-login{
+                    margin-top: 30px;
+                    color: #999;
+                    font-size: 13px;
+                    text-align: center;
+                    .fie{
+                        border-width: 1px 0 0;
+                        border-color: #f5f5ff;
+                        legend{
+                            padding: 0 10px;
+                        }
+                    }
+                    .icon-box{
+                        text-align: center;
+                        margin-top: 15px;
+                        .item{
+                            width: 26px;
+                            height: 26px;
+                            display: inline-block;
+                            margin: 0 8px;
+                            div{
+                                width: 26px;
+                                height: 26px;
+                                background-size: 100% 100%;
+                                background-repeat: no-repeat;
+                                display: block;
+                                cursor: pointer;
+                            }
+                            .img-weixin{
+                                background-image: url(https://accountstatic.vivo.com.cn/accountstatic.vivo.com.cn/static/img/weixin.d36a295.png);
+                                &:hover{
+                                    background-image: url(https://accountstatic.vivo.com.cn/accountstatic.vivo.com.cn/static/img/weixin-hover.460b022.png);
+                                }
+                            }
+                            .img-zhifubao{
+                                background-image: url(https://accountstatic.vivo.com.cn/accountstatic.vivo.com.cn/static/img/zhifubao.a7cbcd5.png);
+                                &:hover{
+                                    background-image: url(https://accountstatic.vivo.com.cn/accountstatic.vivo.com.cn/static/img/zhifubao-hover.fac7ca7.png);
+                                }
+                            }
+                            .img-weibo{
+                                background-image: url(https://accountstatic.vivo.com.cn/accountstatic.vivo.com.cn/static/img/weibo.06d9e46.png);
+                                &:hover{
+                                    background-image: url(https://accountstatic.vivo.com.cn/accountstatic.vivo.com.cn/static/img/weibo-hover.a34ab71.png);
+                                }
+                            }
+                            .img-renren{
+                                background-image: url(https://accountstatic.vivo.com.cn/accountstatic.vivo.com.cn/static/img/renren.e758970.png);
+                                &:hover{
+                                    background-image: url(https://accountstatic.vivo.com.cn/accountstatic.vivo.com.cn/static/img/renren-hover.6f89e8b.png);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
