@@ -157,3 +157,22 @@ navMenu();
     autoPlay();
   });
 })();
+/* 倒计时 */
+
+
+function timeDao() {
+  var starttime = new Date("2020/7/6");
+  setInterval(function () {
+    var nowtime = new Date();
+    var time = starttime - nowtime;
+    var day = parseInt(time / 1000 / 60 / 60 / 24);
+    var hour = parseInt(time / 1000 / 60 / 60 % 24);
+    var minute = parseInt(time / 1000 / 60 % 60);
+    var seconds = parseInt(time / 1000 % 60);
+    $('.timespan').html(day + "天" + hour + "小时" + minute + "分钟" + seconds + "秒");
+    var timeStr = "\n\t\t\t\u8DDD\u79BB\u7ED3\u675F\n\t\t\t<span class=\"time\">".concat(day, "</span>\n\t\t\t\u5929\n\t\t\t<span class=\"time\">").concat(hour, "</span>\n\t\t\t\u65F6\n\t\t\t<span class=\"time\">").concat(minute, "</span>\n\t\t\t\u5206\n\t\t\t<span class=\"time\">").concat(seconds, "</span>\n\t\t\t\u79D2\n\t\t");
+    $('.v-listHd p').html(timeStr);
+  }, 1000);
+}
+
+timeDao();
