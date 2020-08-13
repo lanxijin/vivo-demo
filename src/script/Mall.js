@@ -144,8 +144,6 @@ function navMenu(){
 }
 navMenu();
 
-
-
 /* 轮播图 */
 (function(){
 	var index = 0;
@@ -183,5 +181,32 @@ navMenu();
 		autoPlay();
 	});
 })();
+
+/* 倒计时 */
+function timeDao(){
+	var starttime = new Date("2020/7/6");
+  	setInterval(function () {
+		var nowtime = new Date();
+		var time = starttime - nowtime;
+		var day = parseInt(time / 1000 / 60 / 60 / 24);
+		var hour = parseInt(time / 1000 / 60 / 60 % 24);
+		var minute = parseInt(time / 1000 / 60 % 60);
+		var seconds = parseInt(time / 1000 % 60);
+		$('.timespan').html(day + "天" + hour + "小时" + minute + "分钟" + seconds + "秒");
+		var timeStr = `
+			距离结束
+			<span class="time">${day}</span>
+			天
+			<span class="time">${hour}</span>
+			时
+			<span class="time">${minute}</span>
+			分
+			<span class="time">${seconds}</span>
+			秒
+		`;
+		$('.v-listHd p').html(timeStr);
+	}, 1000);
+}
+timeDao();
 
 

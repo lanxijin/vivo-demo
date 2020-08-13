@@ -7,13 +7,11 @@ function userLogin() {
       $('.eye1').css('display', 'none');
       $('.eye2').css('display', 'block');
       $('.ipt-pwd').prop('type', 'text');
-      console.log(1);
       eye = false;
     } else {
       $('.eye1').css('display', 'block');
       $('.eye2').css('display', 'none');
       $('.ipt-pwd').prop('type', 'password');
-      console.log(2);
       eye = true;
     }
   });
